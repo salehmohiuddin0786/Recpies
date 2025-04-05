@@ -11,7 +11,7 @@ const Recipe = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(`https://dummyjson.com/recipes/${id}`); 
+      const res = await fetch(`https://dummyjson.com/recipe`); 
       const json = await res.json();
       setData(json);
     };
