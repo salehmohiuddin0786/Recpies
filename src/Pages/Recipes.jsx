@@ -10,7 +10,7 @@ const Recipes = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`https://dummyjson.com/recipes/${id}`) 
+            const response = await fetch(`https://dummyjson.com/recipes`) 
             const json = await response.json()
             setApiData(json.recipes)
         }
